@@ -1,0 +1,372 @@
+/* default css */
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+img{
+    max-width: 100%;
+}
+.textcenter{ 
+    text-align: center;
+}
+.textright{
+    text-align: right;
+}
+.textleft{
+    text-align: left;
+}
+/* header css */
+.fixwidth{
+    width: 1024px;
+    margin: auto;
+}
+.header{
+    background-color: #3498db;
+}
+.headerleft{
+    width: 30%;
+   
+    float: left;
+}
+.headerleft img{
+    width: 210px;
+}
+.headerright{
+    width: 70%;
+    float: right;
+   
+}
+
+.headerright ul{
+        text-align: right;
+}
+.headerright ul li{
+        display: inline-block;
+        margin-left: -4px;
+}
+.headerright ul li a{
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        padding: 0 30px;
+        line-height: 75px;
+        border-right: 1px solid;
+        color: white;
+}
+.headerright ul li a:hover{
+        background-color: #2980b9;
+}
+/* banner */
+.banner{
+    background:linear-gradient(rgba(128, 128, 128, 0.336),rgba(128, 128, 128, 0.336)), url(https://miro.medium.com/max/11730/0*ihTZPO4iffJ8n69_) no-repeat center;
+    background-size: cover;
+    padding: 200px;
+}
+.bannercaption{
+  
+}
+.bannercaption h1{
+    background-color: #3498db63;
+    color: white;
+    width: 500px;
+    padding: 10px 20px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.bannercaption h2{
+    background:#00000052;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+}
+/* About */
+.far{
+    margin-right: 10px;
+}
+.about{
+    margin: 30px 0;
+    
+}
+
+.about h2{
+    font-size: 30px;
+    color: #3498db;
+    padding-bottom: 6px;
+}
+
+.about p{    
+    width: 700px;
+    margin: auto;
+    font-size: 16px;}
+/* service */
+.service{
+    margin-top: 40px;
+}
+.serviceitem{
+    width: 31.3%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid gainsboro;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 10px 10px;
+}
+.serviceitem span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-color: #3498db;
+    margin: 10px auto;
+    font-size: 35px;
+    line-height: 60px;
+    color: white;
+    border-radius: 20px 0 20px 0;
+}
+.serviceitem h1{
+    font-size: 30px;
+    margin: 10px 0;
+}
+/* copy content */
+.contentdiv{
+   margin-top: 50px;
+ 
+}
+.contentdiv .content{
+ 
+    border-left: 15px solid #3498db;
+    border-bottom: 15px solid #3498db;
+    border-top: 1px solid #3498db;
+    border-right: 1px solid #3498db;
+    /* box-shadow: 1px 0px 2px black; */
+    padding: 10px;
+    /* background-color: #4b4b4b; */
+    padding-bottom: 33px;
+
+    
+   
+}
+
+
+.imgbox{
+    width: 21%;
+    height: 175px;
+    background-color: #dfe6e9;
+    float: left;
+    box-shadow:  2px 2px 10px black;
+    margin: 20px;
+    position: relative;
+    /* margin-bottom: 40px; */
+    transform: scale(1);
+    transition: .5s;
+    
+   
+}
+.imgbox:hover{
+    transform: scale(1.1);
+}
+.image5, .image6, .image7, .image8{
+    margin-bottom: 0px;
+}
+.imgbox img{
+    max-width: 100%;
+    min-height: 100%;
+}
+/* .imgbox::before{
+    content: "";
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(3, 3, 3, 0.562);
+    transform: translate(5px, 5px);
+    
+} */
+.imgbox .innereffect{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.555);
+    transform: scaleY(0);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform-origin:center;
+}
+.imgbox .innereffect .innertext{
+    text-align: center;
+    color: white;
+    padding: 8px;
+}
+.innerp{
+    text-align: center;
+    color: white;
+    padding: 8px;
+}
+.image4, .image8{
+    margin-right: 0px;
+}
+.imgbox:hover .innereffect{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    
+}
+
+
+
+/* content */
+.content-container{
+    margin-top: 50px;
+}
+.content-container .content{
+    width: 70%;
+    float: left;
+    border-right: 15px solid #3498db;
+    border-top: 15px solid #3498db;
+    border-left: 1px solid #3498db;
+    border-bottom: 1px solid #3498db;
+    padding: 10px 15px;
+    box-sizing: border-box;
+
+}
+
+.content-container .content .content1{
+     float: left;
+     margin-top: 20px;
+   
+}
+.content-container .content .content1 p{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+
+
+}
+.content1 img{
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+    
+}
+/* notice */
+.notice{
+    width: 30%;
+    float: right;;
+}
+.notice-list{
+    
+    margin-left: 10px;
+}
+.notice .notice-list li{
+    list-style: none;
+    margin: 18px;
+    border: 1px solid #ddd;
+    padding: 8.5px;
+    background: rgba(0, 0, 0, 0.301);
+    color: white;
+   
+    
+}
+
+.notice h2{
+    font-size: 30px;
+    color:white;
+    border-bottom: 1px solid;
+    margin-left: 10px;
+    background: #3498db;
+}
+
+/* counselling */
+
+.counselling{
+    margin-top: 20px;
+
+}
+.formheading{
+    color: #3498db;
+    text-shadow: 1px 1px 1px black;
+}
+.formdiv{
+   
+    
+    /* box-shadow: 1px 0px 2px black; */
+    padding: 10px;
+    /* background-color: #4b4b4b; */
+    padding-bottom: 33px;
+    text-align: center;
+    
+   
+}
+input{
+    display: block;
+    margin-top: 15px;
+    outline: none;
+    border-style: none;
+    width: 527px;
+    padding: 10px ;
+    border: 1px solid #3498db;
+  transform: translate(208px,10px);
+ 
+}
+.submitbtn{
+    padding: 10px 150px;
+    margin-top: 30px;
+    color: white;
+    background-color: #3498db;
+    border-style: none;
+    outline: none;
+    border:none;
+    font-size: 20px;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+.submitbtn:hover{
+    background-color: #1f7fbf;
+    transition: .5s;
+}
+
+
+/* footer */
+.footer{
+    background-color: #222f3e;
+}
+.footer .right{
+  
+}
+.right p{
+    color: gainsboro;
+    text-align: center;
+    padding: 20px;
+}
+.footer .socialmenu{
+   text-align: center;
+   border-bottom: 1px solid  #1f7fbf;
+}
+.footer .socialmenu .socialmenubar{
+
+}
+.footer .socialmenu .socialmenubar li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.footer .socialmenu .socialmenubar li a{
+    color: gainsboro;
+    display: block;
+    padding: 20px;
+    font-size: 25px;
+
+}
+.footer .socialmenu .socialmenubar li a:hover{
+    color: #1f7fbf;
+    transition: .3s;
+}
